@@ -1,0 +1,58 @@
+/*Reset CSS*/
+html, body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(237, 188, 188);
+}
+.container{
+    display: grid; /*Aqui inicia a configuração do grid*/
+    grid-template: 20vh 70vh 10vh/3fr 1fr;
+    grid-template-areas: 
+                        "h h"
+                        "m a"
+                        "f f";
+    gap: 1vh;
+    /*grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 50vh 10vh;
+    row-gap: 1vh;
+    column-gap: 1vh;*/
+}
+
+header{
+    background-color: yellow;
+    grid-area: h;
+    /*grid-column: 1/3; */
+    /*grid-column-start:1 ;
+    grid-column-end:3 ;*/
+    /*height: 100px;*/
+}
+
+main{
+    background-color: blue;
+    grid-area: m;
+    /*grid-column: 1/2;*/
+    /*grid-column-start: 1;
+    grid-column-end: 2;*/
+     /*height: 100px;*/
+}
+
+aside{
+    background-color: green;
+    grid-area: a;
+    /*grid-column: 2/3;*/
+    /*grid-column-start: 2;
+    grid-column-end: 3;*/
+     /*height: 100px;*/
+}
+
+footer{
+    background-color: red;
+    grid-area: f;
+    /*grid-column: 1/3;*/
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+     /*height: 100px;*/
+}
